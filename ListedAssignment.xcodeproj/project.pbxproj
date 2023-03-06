@@ -23,6 +23,8 @@
 		8CD5CCE029B4A4AC009F97CF /* listedDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD5CCDF29B4A4AC009F97CF /* listedDefaults.swift */; };
 		8CD5CCE329B4A979009F97CF /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD5CCE229B4A979009F97CF /* Connectivity.swift */; };
 		8CD5CCE629B4AB79009F97CF /* LottieProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD5CCE529B4AB79009F97CF /* LottieProgressHUD.swift */; };
+		8CE0DEE729B5ED6400F7D93B /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE0DEE629B5ED6400F7D93B /* DashboardViewModel.swift */; };
+		8CE0DEEA29B5EE1200F7D93B /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE0DEE929B5EE1200F7D93B /* Logger.swift */; };
 		C447CF2E1C91880568C0029E /* Pods_ListedAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E809372221B735F75AD749 /* Pods_ListedAssignment.framework */; };
 		CAA32B5334BE721E490EE9E1 /* Pods_ListedAssignment_ListedAssignmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77B86FFAF7E19A65B80834BF /* Pods_ListedAssignment_ListedAssignmentUITests.framework */; };
 /* End PBXBuildFile section */
@@ -68,6 +70,8 @@
 		8CD5CCDF29B4A4AC009F97CF /* listedDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listedDefaults.swift; sourceTree = "<group>"; };
 		8CD5CCE229B4A979009F97CF /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
 		8CD5CCE529B4AB79009F97CF /* LottieProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieProgressHUD.swift; sourceTree = "<group>"; };
+		8CE0DEE629B5ED6400F7D93B /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		8CE0DEE929B5EE1200F7D93B /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		B0406B989340CC7C5C43AE76 /* Pods-ListedAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListedAssignment.debug.xcconfig"; path = "Target Support Files/Pods-ListedAssignment/Pods-ListedAssignment.debug.xcconfig"; sourceTree = "<group>"; };
 		B3E809372221B735F75AD749 /* Pods_ListedAssignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ListedAssignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1A6E9862149183FC6ACF4B6 /* Pods-ListedAssignment-ListedAssignmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListedAssignment-ListedAssignmentUITests.release.xcconfig"; path = "Target Support Files/Pods-ListedAssignment-ListedAssignmentUITests/Pods-ListedAssignment-ListedAssignmentUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -182,6 +186,7 @@
 		8CD5CCDD29B4A48F009F97CF /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				8CE0DEE829B5EE0000F7D93B /* Log */,
 				8CD5CCE429B4AB5F009F97CF /* ActivityIndicator */,
 				8CD5CCE129B4A963009F97CF /* InternetLost */,
 				8CD5CCDE29B4A498009F97CF /* Helper */,
@@ -235,6 +240,7 @@
 		8CD5CCE929B4BEE0009F97CF /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				8CE0DEE629B5ED6400F7D93B /* DashboardViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -261,6 +267,14 @@
 				8C3DC78C29B369A000DA6344 /* Main.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		8CE0DEE829B5EE0000F7D93B /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				8CE0DEE929B5EE1200F7D93B /* Logger.swift */,
+			);
+			path = Log;
 			sourceTree = "<group>";
 		};
 		BB7754175162CB80D76C4F0B /* Frameworks */ = {
@@ -513,6 +527,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CD5CCE029B4A4AC009F97CF /* listedDefaults.swift in Sources */,
+				8CE0DEEA29B5EE1200F7D93B /* Logger.swift in Sources */,
+				8CE0DEE729B5ED6400F7D93B /* DashboardViewModel.swift in Sources */,
 				8CD5CCE629B4AB79009F97CF /* LottieProgressHUD.swift in Sources */,
 				8C3DC7B829B36F7A00DA6344 /* NetworkManager.swift in Sources */,
 				8CB907A029B5D16C00F91E40 /* DashboardAPIResponse.swift in Sources */,

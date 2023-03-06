@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: - DashboardAPIResponse
 struct DashboardAPIResponse: Codable {
-    let status: Int?
+    let status: Bool?
     let statusCode: Int?
     let message, supportWhatsappNumber: String?
     let extraIncome: Double?
@@ -34,7 +34,7 @@ struct DashboardAPIResponse: Codable {
     
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
-        status = try values.decodeIfPresent(Int.self, forKey: .status)
+        status = try values.decodeIfPresent(Bool.self, forKey: .status)
         statusCode = try values.decodeIfPresent(Int.self, forKey: .statusCode)
         message = try values.decodeIfPresent(String.self, forKey: .message)
         supportWhatsappNumber = try values.decodeIfPresent(String.self, forKey: .supportWhatsappNumber)

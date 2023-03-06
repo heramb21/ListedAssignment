@@ -83,7 +83,7 @@ class NetworkManager : RequestInterceptor {
                     if let json = try JSONSerialization.jsonObject(with: response.data!, options: .mutableContainers) as? [String: Any] {
                         print("JSON data : \(json)")
                         //                        completion(response.data ,nil)
-                        if (json["success"] as! Int != 1){
+                        if (json["status"] as! Int == 1){
                             DispatchQueue.main.async {
                                 debugPrint("response:\(json)")
                             }

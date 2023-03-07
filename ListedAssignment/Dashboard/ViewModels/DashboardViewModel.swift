@@ -27,5 +27,16 @@ class DashboardViewModel{
             }
         }
     }
-    
+    func convertDateFormat(inputDate: String) -> String {
+
+         let olDateFormatter = DateFormatter()
+         olDateFormatter.dateFormat = "yyyy-MM-dd"
+
+         let oldDate = olDateFormatter.date(from: inputDate)
+
+         let convertDateFormatter = DateFormatter()
+         convertDateFormatter.dateFormat = "dd MMM"
+
+         return convertDateFormatter.string(from: oldDate!)
+    }
 }

@@ -17,7 +17,7 @@ class LottieProgressHUD: UIView {
     var hudWidth:CGFloat    = 150
     var hudHeight:CGFloat   = 150
     var hudBackgroundColor  = UIColor.white
-    var animationFileName   = "splash"
+    var animationFileName   = "loaderJump"
     var borderWidth1:CGFloat = 1
     var borderColor1 = UIColor.white.withAlphaComponent(0.7).cgColor
     var borderRadius:CGFloat = 15

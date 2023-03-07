@@ -10,6 +10,7 @@ target 'ListedAssignment' do
     pod 'Charts'
     pod 'SwiftyJSON', '~> 4.0'
     pod 'lottie-ios'
+    pod 'SDWebImage'
   target 'ListedAssignmentTests' do
     inherit! :search_paths
     # Pods for testing
